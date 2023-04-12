@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Weather</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <form class="search">
+                <input class="search-bar" type="text" id="search-bar" placeholder="Search city name" spellcheck="false">
+                <button class="search-btn" type="button" id="submit"><img src="./images/search.png"></i></button>
+            </form>
+        </div>
+    </header>
+    <div class="container">
+        <div class="container-left">
+            <div class="notification"></div>
+            <div class="current-data">
+                <div class="current-data__location"></div>
+                <div class="w-icon "><img class="large" src="./images/unknown.png" data-curent-icon/></div>
+                <div class="description"></div>
+                <div class="current-data__time">
+                    12:30 <span id="am-pm"></span>
+                </div>
+                <div class="current-data__date">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="container-right">
+            <div class="day-info">
+                <div class="day-info__item">
+                    <div class="uppercase">temperature</div>
+                    <div class="temp">15&deg<span>C</span></div>
+                </div>
+                <div class="day-info__item">
+                    <div class="uppercase">wind</div>
+                    <div class="wind">15<span>hm/h</span></div>
+                </div>
+            
+                <div class="day-info__item">
+                    <div class="uppercase">humidity</div>
+                    <div class="hum">50<span>%</span></div>
+                    
+                </div>
+                <div class="day-info__item">
+                </div>       
+            </div>
+        </div>
+    </div>
+  
+    <div class="container">
+        <table class="hour-forecast table table-Primary table-hover">
+            <tbody data-title="" id="week-forecast">
+             
+            </tbody>
+        </table>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
